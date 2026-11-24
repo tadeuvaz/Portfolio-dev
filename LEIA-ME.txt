@@ -1,0 +1,21 @@
+PORTFÓLIO — TADEU VAZ
+
+Arquivos:
+- index.html: estrutura do site
+- index.css: estilos e responsividade
+- script.js: menu mobile, animações e navegação
+- img/: coloque aqui sua foto com o nome Tadeu.png.png
+
+COMO USAR
+1. Extraia o ZIP.
+2. Coloque sua foto em portfolio_tadeu/img/Tadeu.png.png.
+3. Abra index.html no navegador.
+4. Edite os textos-modelo de projetos e habilidades para refletir seus conhecimentos reais.
+
+PERSONALIZAÇÕES IMPORTANTES
+- Os dois projetos são modelos; substitua nomes, descrições e links.
+- Atualize as tecnologias conforme o que você realmente conhece/estuda.
+- A experiência profissional foi mantida de forma geral, sem inventar empresas ou cargos.
+- O botão de e-mail utiliza o endereço que já constava no HTML enviado.
+
+Não é necessário instalar dependências ou usar framework.

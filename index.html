@@ -1,82 +1,233 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tadeu Vaz | Portfólio</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Tadeu Vaz, estudante de Análise e Desenvolvimento de Sistemas e desenvolvedor em formação.">
+  <meta name="theme-color" content="#080d1b">
+  <title>Tadeu Vaz | Desenvolvedor em formação</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
+  <a class="skip-link" href="#inicio">Pular para o conteúdo</a>
 
-    <!-- NAV -->
-    <nav class="nav">
-        <ul class="nav-list">
-            <li><a href="index.html">Sobre mim</a></li>
-        </ul>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a class="brand" href="#inicio" aria-label="Tadeu Vaz - início">TV<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#inicio" class="nav-link active">Início</a></li>
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+        <li><a href="#projetos" class="nav-link">Projetos</a></li>
+        <li><a href="#trajetoria" class="nav-link">Trajetória</a></li>
+        <li><a href="#contato" class="nav-link nav-contact">Contato</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <!-- HEADER -->
-    <header class="header">
-        <div class="container">
-            <div class="profile">
-                <img src="./img/Tadeu.png.png" alt="Foto de Tadeu Vaz" class="profile-img">
-                <h1>Tadeu Vaz</h1>
-                <h2>Desenvolvedor em formação</h2>
-            </div>
+  <main>
+    <section class="hero section-shell" id="inicio">
+      <div class="hero-glow glow-one"></div>
+      <div class="hero-glow glow-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="status-dot"></span> Olá! Seja bem-vindo ao meu portfólio</p>
+          <h1>Construindo meu caminho na <span>tecnologia.</span></h1>
+          <p class="hero-description">
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projetos">Conheça meus projetos <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="#contato">Entre em contato</a>
+          </div>
+          <div class="hero-socials" aria-label="Redes sociais">
+            <a href="https://github.com/tadeuvaz" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+            <a href="https://www.linkedin.com/in/tadeu-vaz-515936373" target="_blank" rel="noopener noreferrer">LinkedIn <span>↗</span></a>
+          </div>
         </div>
-    </header>
+        <div class="hero-visual reveal">
+          <div class="portrait-frame">
+            <div class="portrait-orbit orbit-a"></div>
+            <div class="portrait-orbit orbit-b"></div>
+            <img src="\tadeu.png\foto tadeu.png" alt="Foto de Tadeu Vaz" class="profile-img"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+            <div class="portrait-fallback" aria-hidden="true">TV</div>
+            <div class="floating-tag tag-top"><span class="tag-icon">⌘</span> Desenvolvedor em formação</div>
+            <div class="floating-tag tag-bottom"><span class="tag-dot"></span> Sempre aprendendo</div>
+          </div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#sobre" aria-label="Rolar para a seção Sobre"> <span></span> Role para conhecer</a>
+    </section>
 
-    <!-- MAIN -->
-    <main class="container">
+    <section class="section section-shell" id="sobre">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 / Um pouco sobre mim</p>
+          <h2>Quem sou <span>eu?</span></h2>
+          <p>Conheça um pouco da minha trajetória e do que me motiva a entrar na área de tecnologia.</p>
+        </div>
+        <div class="about-grid">
+          <article class="about-card panel reveal">
+            <p>Olá! Meu nome é <strong>Tadeu Augusto Silva Vaz</strong>. Sou estudante de Análise e Desenvolvimento de Sistemas e estou iniciando minha trajetória na área de tecnologia, com foco no desenvolvimento de software.</p>
+            <p>Atualmente, atuo como estágiario no Sicoob Credifor localizado na cidade de Formiga Minas Gerais, no setor de Performance Corporativa, onde contribuo na área de Gestão de Processos utilizando a plataforma Lecom e linguagem JavaScript.</p>
+            <p>A Plataforma Lecom é uma ferramenta brasileira de automação e gestão inteligente de processos (BPM) que transforma fluxos de trabalhos manuais e burocráticos em operações digitais organizadas.</p>
+            <p>Embora a ferramenta siga o conceito low-code/no-code para a modelagem de fluxos, nos utlizamos a linguagem JavaScript(js) para criar regras de negócio dinâmicas e realizar integrações assíncronas.</p>
+            <p>Minha experiência nas áreas administrativas, operacional e de logística contribuiuram para desenvolver organização, responsabilidade, proatividade e trabalho em equipe — competências que levo comigo para a tecnologia.</p>
+            <p>Estou à disposição para aprender e colaborar em projetos pessoais/profissionais onde posso colocar minhas habilidades em prática.</p>
+          </article>
+          <aside class="about-aside reveal">
+            <div class="info-card panel">
+              <span class="info-icon">⌖</span>
+              <div><small>Formação atual</small><strong>Análise e Desenvolvimento de Sistemas</strong></div>
+            </div>
+            <div class="info-card panel">
+              <span class="info-icon">✦</span>
+              <div><small>Instituição</small><strong>Estácio</strong></div>
+            </div>
+            <div class="info-card panel">
+              <span class="info-icon">↗</span>
+              <div><small>Objetivo</small><strong>Desenvolvimento de software</strong></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
 
-        <!-- SOBRE -->
-        <section class="section">
-            <h3>Sobre mim</h3>
-            <p>
-                Olá! Meu nome é Tadeu Augusto Silva Vaz, tenho 24 anos e sou estudante de Análise e Desenvolvimento de Sistemas. Estou iniciando minha trajetória na área de tecnologia com foco em desenvolvimento de software, buscando constantemente evoluir meus conhecimentos por meio da graduação e de estudos complementares em programação.
-            </p>
-            <p>
-                Possuo experiência nas áreas administrativa, operacional e de logística, onde desenvolvi habilidades como organização, responsabilidade, proatividade e trabalho em equipe. Essas competências contribuem diretamente para minha evolução na área de tecnologia.
-            </p>
-            <p>
-                Tenho facilidade de aprendizado e grande interesse em construir uma carreira sólida como desenvolvedor, participando de projetos e evoluindo continuamente como profissional de TI.
-            </p>
-        </section>
+    <section class="section section-alt section-shell" id="habilidades">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">02 / Conhecimentos</p>
+          <h2>Habilidades & <span>tecnologias</span></h2>
+          <p>Uma área para apresentar as ferramentas e os conhecimentos que fazem parte da sua jornada.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card panel reveal">
+            <div class="skill-symbol">&lt;/&gt;</div>
+            <h3>Desenvolvimento web</h3>
+            <p>Inclua aqui as tecnologias de front-end que você já estudou e praticou.</p>
+            <div class="skill-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </article>
+          <article class="skill-card panel reveal">
+            <div class="skill-symbol">⌘</div>
+            <h3>Ferramentas</h3>
+            <p>Adicione as ferramentas que utiliza no seu processo de desenvolvimento.</p>
+            <div class="skill-tags"><span>Git</span><span>GitHub</span><span>GitHub Desktop</span><span>VS Code</span></div>
+          </article>
+          <article class="skill-card panel reveal">
+            <div class="skill-symbol">◇</div>
+            <h3>Fundamentos</h3>
+            <p>Conhecimentos que apoiam a construção de soluções e a evolução técnica.</p>
+            <div class="skill-tags"><span>Lógica de programação</span><span>Criaçãode Fluxogramas</span><span>Estruturação de Processos</span><span>Resolução de problemas</span></div>
+          </article>
+        </div>
+        <p class="section-note">Personalize as etiquetas para refletirem apenas tecnologias e ferramentas que você realmente conhece ou está estudando.</p>
+      </div>
+    </section>
 
-        <!-- FORMAÇÃO -->
-        <section class="section">
-            <h3>Formação</h3>
-            <p>
-                Atualmente estou cursando Análise e Desenvolvimento de Sistemas pela Estácio, no terceiro período. Durante a graduação, venho adquirindo conhecimentos em lógica de programação, desenvolvimento de sistemas e resolução de problemas.
-            </p>
-        </section>
+    <section class="section section-shell" id="projetos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">03 / Na prática</p>
+          <h2>Projetos em <span>destaque</span></h2>
+          <p>Projetos são uma ótima forma de mostrar como você aplica o que aprende.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card panel reveal">
+            <div class="project-art art-one"><span>01</span><div class="art-window"><i></i><i></i><i></i><b>&lt; projeto /&gt;</b></div></div>
+            <div class="project-content">
+              <p class="project-type">PROJETO WEB</p>
+              <h3>Nome do seu projeto</h3>
+              <p>Descreva em duas ou três frases o problema que o projeto resolve, suas funcionalidades e o que você aprendeu desenvolvendo-o.</p>
+              <div class="skill-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <div class="project-links"><a href="https://github.com/tadeuvaz" target="_blank" rel="noopener noreferrer">Código no GitHub ↗</a><span class="coming-soon">Substitua pelos seus links</span></div>
+            </div>
+          </article>
+          <article class="project-card panel reveal">
+            <div class="project-art art-two"><span>02</span><div class="art-circles"><i></i><i></i><i></i></div></div>
+            <div class="project-content">
+              <p class="project-type">PROJETO PESSOAL</p>
+              <h3>Outro projeto seu</h3>
+              <p>Apresente outro trabalho, explicando seu objetivo, os recursos implementados e as tecnologias utilizadas.</p>
+              <div class="skill-tags"><span>Adicione</span><span>suas</span><span>tecnologias</span></div>
+              <div class="project-links"><a href="https://github.com/tadeuvaz" target="_blank" rel="noopener noreferrer">Código no GitHub ↗</a><span class="coming-soon">Substitua pelos seus links</span></div>
+            </div>
+          </article>
+        </div>
+        <p class="section-note">Os cards acima são modelos de preenchimento, não projetos publicados. Troque textos, tecnologias e endereços pelos seus trabalhos reais.</p>
+      </div>
+    </section>
 
-        <!-- CURSOS -->
-        <section class="section">
-            <h3>Cursos</h3>
-            <p>
-                Estou realizando o curso Full Stack Pro da Iuri Code há cerca de 6 meses, com foco em desenvolvimento web. Tenho desenvolvido projetos práticos e aprendido tecnologias modernas utilizadas no mercado.
-            </p>
-        </section>
+    <section class="section section-alt section-shell" id="trajetoria">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">04 / Minha caminhada</p>
+          <h2>Formação & <span>experiência</span></h2>
+          <p>Minha trajetória combina aprendizado acadêmico e experiências profissionais anteriores.</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="timeline-marker"></span>
+            <div class="timeline-date">FORMAÇÃO ACADÊMICA</div>
+            <div class="timeline-card panel">
+              <h3>Análise e Desenvolvimento de Sistemas</h3>
+              <p class="timeline-place">Estácio · Em andamento</p>
+              <p>Atualmente no terceiro período, desenvolvendo conhecimentos em lógica de programação, desenvolvimento de sistemas e resolução de problemas.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-marker"></span>
+            <div class="timeline-date">APERFEIÇOAMENTO</div>
+            <div class="timeline-card panel">
+              <h3>Full Stack Pro</h3>
+              <p class="timeline-place">Iuri Code · Em andamento</p>
+              <p>Curso voltado ao desenvolvimento web, com estudos e prática por meio de projetos.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-marker"></span>
+            <div class="timeline-date">EXPERIÊNCIA PROFISSIONAL</div>
+            <div class="timeline-card panel">
+              <h3>Experiências administrativas, operacionais e de logística</h3>
+              <p>Atuação em áreas que contribuíram para desenvolver organização, responsabilidade, proatividade e trabalho em equipe.</p>
+              <p class="section-note">Acrescente nomes das empresas, cargos e períodos se quiser divulgar essas informações.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    </main>
+    <section class="section section-shell contact-section" id="contato">
+      <div class="container">
+        <div class="contact-panel panel reveal">
+          <div class="contact-copy">
+            <p class="eyebrow">05 / Vamos conversar?</p>
+            <h2>Tem uma oportunidade ou quer trocar uma ideia?</h2>
+            <p>Estou aberto a conexões, oportunidades de aprendizado e conversas sobre tecnologia e desenvolvimento.</p>
+            <a class="button button-primary" href="mailto:tadeuasv13@gmail.com?subject=Contato%20pelo%20portf%C3%B3lio">Enviar um e-mail <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:tadeuasv13@gmail.com"><span class="contact-icon">✉</span><span><small>E-mail</small><strong>tadeuasv13@gmail.com</strong></span><b>↗</b></a>
+            <a href="https://www.linkedin.com/in/tadeu-vaz-515936373" target="_blank" rel="noopener noreferrer"><span class="contact-icon">in</span><span><small>LinkedIn</small><strong>Conecte-se comigo</strong></span><b>↗</b></a>
+            <a href="https://github.com/tadeuvaz" target="_blank" rel="noopener noreferrer"><span class="contact-icon">⌘</span><span><small>GitHub</small><strong>Veja meus repositórios</strong></span><b>↗</b></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <a href="https://www.linkedin.com/in/tadeu-vaz-515936373" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="40">
-        </a>
-
-        <a href="https://github.com/tadeuvaz" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="40">
-        </a>
-
-        <a href="https://mail.google.com/mail/?view=cm&to=tadeuasv13@gmail.com" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" width="40">
-        </a>
-    </footer>
-
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#inicio">TV<span>.</span></a>
+      <p>© <span id="current-year"></span> Tadeu Vaz. Feito com dedicação.</p>
+      <a href="#inicio" class="back-top">Voltar ao topo ↑</a>
+    </div>
+  </footer>
 </body>
 </html>
